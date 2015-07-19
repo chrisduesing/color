@@ -115,11 +115,11 @@ function rgbToHsv(r, g, b) {
     if (arguments.length === 1) {
         g = r[1]; b = r[2]; r = r[0];
     }
-    let max = Math.max(r, g, b);
-    let min = Math.min(r, g, b);
-    let d = max - min;
-    let s = (max === 0 ? 0 : d / max);
-    let v = max / 255;
+    var max = Math.max(r, g, b);
+    var min = Math.min(r, g, b);
+    var d = max - min;
+    var s = (max === 0 ? 0 : d / max);
+    var v = max / 255;
     var h;
     switch (max) {
         case min: h = 0; break;
